@@ -15,7 +15,7 @@
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
 		<version>1.5.9.RELEASE</version>
-		<relativePath/> <!-- lookup parent from repository -->
+		<relativePath /> <!-- lookup parent from repository -->
 	</parent>
 
 	<properties>
@@ -63,5 +63,25 @@
 		</plugins>
 	</build>
 
+	<repositories>
+		<repository>
+			<id>M2-Group</id>
+			<url>http://localhost:8081/repository/M2-Group/</url>
+		</repository>
+	</repositories>
+
+	<distributionManagement>
+
+		<snapshotRepository>
+			<id>M2-Snapshots</id>
+			<url>http://localhost:8081/repository/M2-Snapshots/</url>
+		</snapshotRepository>
+
+		<repository>
+			<id>M2-Release</id>
+			<url>http://localhost:8081/repository/M2-Release/</url>
+		</repository>
+
+	</distributionManagement>
 
 </project>
